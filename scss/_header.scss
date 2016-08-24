@@ -59,10 +59,13 @@
      p {
          font-size: 2em;
          text-transform: uppercase;
-         line-height: 1.5em;
+         line-height: 1.2em;
          letter-spacing: .2em;
          color: $white;
          margin: 0;
+         @media #{$md} {
+             line-height: 1.5em;
+         }
      }
      .pageHeader_block {
          display: block;
@@ -80,6 +83,9 @@
              @extend .pageHeader_text-l;
              p {
                  @media #{$sm} {
+                     margin-top: 49px;
+                 }
+                  @media #{$md} {
                      margin-top: 60px;
                  }
              }
