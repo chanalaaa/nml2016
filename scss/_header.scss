@@ -1,4 +1,18 @@
  // Header //////////////////////////////////
-
+ .navbar nav>ul>li.navbar-title button {
+     display: block;
+     @media #{$md} {
+         display: none;
+     }
+ }
+ 
+ .navbar {
+     .collapse {
+         display: none;
+         @media #{$md} {
+             display: inherit;
+         }
+     }
+ }
  
  // End Header //////////////////////////////////
