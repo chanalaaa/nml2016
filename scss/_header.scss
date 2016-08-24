@@ -4,13 +4,48 @@
      @media #{$md} {
          display: none;
      }
+     color: $white !important;
+     &:hover {
+         color: $purper !important;
+     }
+ }
+ 
+ .navbar nav>ul>li>a:not([role=button]).active,
+ .navbar nav>ul>li>a:not([role=button]):hover {
+     background: transparent;
+     border-color: transparent;
+     color: rgba(0, 0, 0, .85);
  }
  
  .navbar {
+     padding: 20px;
+     background-color: $black;
      .collapse {
          display: none;
          @media #{$md} {
              display: inherit;
+         }
+     }
+     a {
+         color: $white !important;
+         &:hover {
+             color: $purper !important;
+         }
+     }
+     .navbar-title {
+         a > img {
+             width: 30%;
+             min-width: 120px;
+         }
+     }
+     .navLogo {
+         flex: 1;
+     }
+     .navList {
+         @media #{$md} {
+             li {
+                 padding: 0 45px;
+             }
          }
      }
  }

@@ -3,6 +3,10 @@ $sm: "screen and (min-width: 380px)";
 $md: "screen and (min-width: 768px)";
 $lg: "screen and (min-width: 1024px)";
 
+$black: #000;
+$white: #fff;
+$purper: #7646FF;
+$gray: #231F20;
 
 html {
     font-size: 62.5%;
@@ -41,3 +45,4 @@ p {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
 }
+
