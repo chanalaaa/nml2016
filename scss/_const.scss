@@ -5,7 +5,7 @@ $lg: "screen and (min-width: 1024px)";
 $black: #000;
 $white: #fff;
 $purper: #7646FF;
-$gray: #231F20;
+$gray: #929497;
 html {
     font-size: 62.5%;
 }
@@ -42,9 +42,13 @@ body {
 p {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
-    line-height: .8em;
+    line-height: 1em;
 }
 
 .-text-purper {
     color: $purper !important;
+}
+
+.-block-center{
+    margin: 0 auto !important;
 }
