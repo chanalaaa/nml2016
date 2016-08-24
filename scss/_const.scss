@@ -1,13 +1,11 @@
-
-$sm: "screen and (min-width: 380px)";
+$xs: "screen and (min-width: 380px)";
+$sm: "screen and (min-width: 490px)";
 $md: "screen and (min-width: 768px)";
 $lg: "screen and (min-width: 1024px)";
-
 $black: #000;
 $white: #fff;
 $purper: #7646FF;
 $gray: #231F20;
-
 html {
     font-size: 62.5%;
 }
@@ -44,5 +42,9 @@ body {
 p {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
+    line-height: .8em;
 }
 
+.-text-purper {
+    color: $purper !important;
+}
