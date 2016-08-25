@@ -303,11 +303,80 @@ iframe {
 /* section_articles =====================*/
 
 .section_articles {
+    .content-desc {
+        padding: 10px 15px 50px;
+    }
     .section-title {
+        position: relative;
         background-color: $white;
         border-top: 1px solid $gray;
-        p{
+        p {
             color: $black;
+        }
+        @media #{$md} {
+            position: absolute;
+        }
+    }
+    .article_list {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .article-content {
+        display: -moz-box !important;
+        display: flex;
+        flex-flow: column wrap;
+        background-color: $black;
+    }
+    .article-img {
+        display: flex;
+        //flex: 1 1 20%;
+        //padding-right: 20px;
+        flex: 1 0 auto;
+        min-height: 30rem;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        width: 60%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .article-detail {
+        display: flex;
+        flex: 1;
+        flex: 1 0 auto;
+        flex-flow: column wrap;
+        padding: 0px;
+        overflow: hidden;
+        min-height: 260px;
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    .article--title {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        p {
+            font-size: 1.4em;
+            font-weight: 300;
+            color: $white;
+        }
+    }
+    .article--spec p {
+        font-size: 1em;
+        color: $gray;
+    }
+    .article--text p {
+        margin: 15px 0;
+        p {
+            font-size: 1.3em;
+            color: $gray;
         }
     }
 }
