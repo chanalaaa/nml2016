@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $('.owl-carousel.loop').owlCarousel({
+
+
+    $(".owl-carousel.loop").owlCarousel({
         center: true,
         items: 1,
         loop: true,
@@ -10,6 +12,15 @@ $(document).ready(function() {
             }
         }
     });
+    var owl = $(".owl-carousel.loop");
+    owl.owlCarousel();
+    // Custom Navigation Events
+    $(".next").click(function() {
+        owl.trigger('next.owl.carousel');
+    })
+    $(".prev").click(function() {
+        owl.trigger('prev.owl.carousel');
+    })
 
 });
 

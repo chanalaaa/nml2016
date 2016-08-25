@@ -159,4 +159,35 @@ iframe {
     }
 }
 
+.customNavigation {
+    i {
+        cursor: pointer;
+        font-size: 3em;
+        &:hover{
+            color: $purper;
+        }
+    }
+    .prev {
+        position: absolute;
+        left: 20px;
+        z-index: 2;
+        top: 7rem;
+        color: $white;
+        @media #{$sm} {
+            top: 7.7rem;
+        }
+        @media #{$md} {
+            top: 9rem;
+        }
+        @media #{$lg} {
+            top: 14rem;
+        }
+    }
+    .next {
+        @extend .prev;
+        left: initial;
+        right: 20px;
+    }
+}
+
 // End Content //////////////////////////////////
