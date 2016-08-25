@@ -225,6 +225,10 @@ iframe {
     }
     .next {
         @extend .prev;
+        /* for ie===*/
+        text-align: right;
+        margin-left: 40px;
+        /* ===*/
         left: initial;
         right: 50px;
         @media #{$sm} {
