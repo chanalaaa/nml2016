@@ -97,8 +97,14 @@ iframe {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 40px 15px 15px;
-    width: 100%;
+    width: 86%;
     margin: 0 auto;
+    @media #{$sm} {
+        width: 47%;
+    }
+    @media (max-width: 600px) and (min-width: 490px) {
+        width: 80%;
+    }
     @media #{$lg} {
         width: 70%;
     }
@@ -124,38 +130,41 @@ iframe {
             filter: grayscale(0);
         }
     }
-}
-
-.item {
-    position: relative;
-    background: transparent;
-    min-height: 18rem;
-    overflow: hidden;
-    @media #{$sm} {
-        min-height: 19rem;
-    }
-    @media #{$md} {
-        min-height: 22rem;
-    }
-    @media #{$lg} {
-        min-height: 32rem;
-    }
-    img {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .item {
+        position: relative;
+        background: transparent;
+        height: 15rem;
+        overflow: hidden;
+        @media #{$sm} {
+            height: 19rem;
+        }
+        @media #{$md} {
+            height: 22rem;
+        }
+        @media #{$lg} {
+            height: 31rem;
+        }
+        img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
 .bg-purper {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 10em;
+    height: 8em;
     background-color: $purper;
+    @media #{$md} {
+        height: 9em;
+    }
     @media #{$md} {
         height: 12em;
     }
@@ -165,14 +174,37 @@ iframe {
 }
 
 .section_triple {
-    padding-top: 4rem;
     margin-top: -1rem;
     z-index: 1;
-    @media #{$sm} {
-        padding-top: 6rem;
+    &.first {
+        padding-top: 4rem;
+        @media #{$sm} {
+            padding-top: 6rem;
+        }
+        @media #{$lg} {
+            padding-top: 8rem;
+        }
+        .bg-purper {
+            display: block;
+        }
     }
-    @media #{$lg} {
-        padding-top: 8rem;
+    &.purper_btm {
+        .bg-purper {
+            display: block;
+            top: initial;
+            bottom: 30px;
+            height: 32rem;
+            @media #{$lg} {
+                bottom: 50px;
+                height: 37rem;
+            }
+        }
+        .content-desc {
+            p,
+            h2 {
+                color: $white;
+            }
+        }
     }
     .col-md-5 {
         width: 100%;
@@ -187,13 +219,16 @@ iframe {
         }
     }
     .content-tag {
-        padding-right: 17px;
+        padding-right: 48px;
         @media #{$sm} {
-            padding-right: 8px;
+            padding-right: 26px;
         }
     }
     .content-desc {
         padding: 10px 15px 15px;
+    }
+    .video_container {
+        //padding-top: 4.25%;
     }
 }
 
@@ -209,11 +244,11 @@ iframe {
         position: absolute;
         left: 50px;
         z-index: 2;
-        top: 7rem;
+        top: 5rem;
         color: $white;
         @media #{$sm} {
             top: 7.7rem;
-            left: 35px;
+            left: 50px;
         }
         @media #{$md} {
             top: 9rem;
@@ -233,11 +268,46 @@ iframe {
         right: 50px;
         @media #{$sm} {
             left: initial;
-            right: 35px;
+            right: 50px;
         }
         @media #{$md} {
             left: initial;
             right: 40px;
+        }
+    }
+}
+
+.seeMore {
+    @extend .clearfix;
+    display: block;
+    width: 80%;
+    margin: .5em auto 5em;
+    text-align: right;
+    img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+    p {
+        color: $black;
+        margin-top: -13px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    @media #{$md} {
+        width: 70%;
+    }
+}
+
+
+/* section_articles =====================*/
+
+.section_articles {
+    .section-title {
+        background-color: $white;
+        border-top: 1px solid $gray;
+        p{
+            color: $black;
         }
     }
 }

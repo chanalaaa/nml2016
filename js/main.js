@@ -13,15 +13,18 @@ $(document).ready(function() {
             }
         }
     });
-    var owl = $(".owl-carousel.loop");
-    owl.owlCarousel();
-    // Custom Navigation Events
-    $(".next").click(function() {
-        owl.trigger('next.owl.carousel');
-    })
-    $(".prev").click(function() {
-        owl.trigger('prev.owl.carousel');
-    })
+
+    $(".owl-carousel.loop").each(function() {
+        var $this = $(this);
+        // Custom Navigation Events
+        $this.parent().find(".next").click(function() {
+            $this.trigger('next.owl.carousel');
+        });
+        $this.parent().find(".prev").click(function() {
+            $this.trigger('prev.owl.carousel');
+        });
+    });
+
 
 });
 

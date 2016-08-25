@@ -6,6 +6,8 @@ block title
 block body
 	include ./layout/_header   
 	//- content 
+
+	// section 1
 	section.section_single
 		.row
 			.col-12.col-md-6.-block-center.section-block
@@ -24,7 +26,8 @@ block body
 							|	Mt.Raineir chilled cup coffee has been readily serving Japanese people 	
 							|	at about  one million cups daily for decade.
 
-	section.section_triple
+	// section 2
+	section.section_triple.first
 		.bg-purper
 		.row
 			.col-12.section-block
@@ -54,7 +57,118 @@ block body
 							|	Mt.Raineir chilled cup coffee has been readily serving Japanese people 	
 							|	at about  one million cups daily for decade.
 
+	// section 2.2
+	section.section_triple
+		.bg-purper
+		.row
+			.col-12.section-block
+				.col-12.col-md-5.-block-center.section-block
+					.customNavigation
+						i.prev.fa.fa-angle-left 
+						i.next.fa.fa-angle-right
+				.owl-carousel.loop
+					.item
+						img(src="https://unsplash.it/1200/600?image=96", alt="")
+					.item
+						img(src="https://unsplash.it/1200/600?image=70", alt="")
+					.item
+						img(src="https://unsplash.it/1200/600?image=122", alt="")
+						//-
+							.video_container
+									iframe(class="vimeo" src="https://player.vimeo.com/video/64542720?color=7646FF&title=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen )
+					.item
+						img(src="https://unsplash.it/1200/600?image=39", alt="")
+			.col-12.col-md-5.-block-center
+				.content-tag
+					p PRINT ADS
+			.col-12.col-md-6.-block-center.section-block
+				.content				
+					.content-desc
+						h2 
+							| A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai market!
+						p 
+							| Inspired by cinematic landscape of Mt.Rainier in United States, 
+							|	Mt.Raineir chilled cup coffee has been readily serving Japanese people 	
+							|	at about  one million cups daily for decade.
 
+
+	// section 3
+	section.section_single
+		.row
+			.col-12.col-md-6.-block-center.section-block
+				//-
+					.section-title
+						p what you can expect
+				.content
+					.video_container
+						iframe(class="vimeo" src="https://player.vimeo.com/video/179940346?color=7646FF&title=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen )
+					.content-tag
+						p VDO Series
+					.content-desc
+						h2 
+							| A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai market!
+						p 
+							| Inspired by cinematic landscape of Mt.Rainier in United States, 
+							|	Mt.Raineir chilled cup coffee has been readily serving Japanese people 	
+							|	at about  one million cups daily for decade.
+
+
+	// section 4
+	section.section_triple.purper_btm
+		.bg-purper
+		.row
+			.col-12.section-block
+				.col-12.col-md-5.-block-center.section-block
+					.customNavigation
+						i.prev.fa.fa-angle-left 
+						i.next.fa.fa-angle-right
+				.owl-carousel.loop
+					.item
+						img(src="https://unsplash.it/1200/600?image=39", alt="")
+					.item
+						img(src="https://unsplash.it/1200/600?image=96", alt="")
+					.item
+						img(src="http://placehold.it/1200x600", alt="")
+					.item
+						img(src="https://unsplash.it/1200/600?image=70", alt="")
+			.col-12.col-md-5.-block-center
+				.content-tag
+					p PRINT ADs
+			.col-12.col-md-6.-block-center.section-block
+				.content				
+					.content-desc
+						h2 
+							| A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai market!
+						p 
+							| Inspired by cinematic landscape of Mt.Rainier in United States, 
+							|	Mt.Raineir chilled cup coffee has been readily serving Japanese people 	
+							|	at about  one million cups daily for decade.
+
+
+	.seeMore
+		a(href="#")
+			img(src="./images/seemore_arrow.png")
+			p see more stories
+
+
+	// section 5
+	section.section_articles
+		.row
+			.col-12.-block-center.section-block
+				.section-title
+					p what 's on
+				.content
+					.article_list
+						.article-content
+							.article-img
+								img(src="http://placehold.it/800x1000", alt="")
+							.article-detail
+								.article--title
+									p article--title
+								.article--spec
+									p article--spec
+								.article--text
+									p article--text
 
 	//- end content
 	include ./layout/_footer
