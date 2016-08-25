@@ -117,7 +117,7 @@ iframe {
 
 .item {
     position: relative;
-    background: #eee;
+    background: transparent;
     min-height: 18rem;
     overflow: hidden;
     @media #{$sm} {
@@ -138,7 +138,31 @@ iframe {
     }
 }
 
+.bg-purper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10em;
+    background-color: $purper;
+     @media #{$md} {
+       height: 12em;
+    }
+    @media #{$lg} {
+        height: 25rem;
+    }
+}
+
 .section_triple {
+    padding-top: 4rem;
+    margin-top: -1rem;
+    z-index: 1;
+    @media #{$sm} {
+        padding-top: 6rem;
+    }
+    @media #{$lg} {
+        padding-top: 8rem;
+    }
     .col-md-5 {
         width: 100%;
         @media #{$sm} {
@@ -157,7 +181,7 @@ iframe {
             padding-right: 8px;
         }
     }
-    .content-desc{
+    .content-desc {
         padding: 10px 15px 15px;
     }
 }
@@ -166,21 +190,23 @@ iframe {
     i {
         cursor: pointer;
         font-size: 3em;
-        &:hover{
+        &:hover {
             color: $purper;
         }
     }
     .prev {
         position: absolute;
-        left: 20px;
+        left: 50px;
         z-index: 2;
         top: 7rem;
         color: $white;
         @media #{$sm} {
             top: 7.7rem;
+            left: 35px;
         }
         @media #{$md} {
             top: 9rem;
+            left: 40px;
         }
         @media #{$lg} {
             top: 14rem;
@@ -189,7 +215,15 @@ iframe {
     .next {
         @extend .prev;
         left: initial;
-        right: 20px;
+        right: 50px;
+        @media #{$sm} {
+            left: initial;
+            right: 35px;
+        }
+        @media #{$md} {
+            left: initial;
+            right: 40px;
+        }
     }
 }
 

@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 
     $(".owl-carousel.loop").owlCarousel({
+        stagePadding: 40,
         center: true,
         items: 1,
         loop: true,
