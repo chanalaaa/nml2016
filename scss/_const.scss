@@ -56,14 +56,14 @@ a{
     margin: 0 auto !important;
 }
 .-onlylg{
-    display: none;
+    display: none !important;
     @media #{$lg}{
-        display: block;
+        display: block !important;
     }
 }
 .-onlyres{
-    display: block;
+    display: block !important;
     @media #{$lg}{
-        display: none;
+        display: none !important;
     }
 }

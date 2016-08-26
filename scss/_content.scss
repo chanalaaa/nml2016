@@ -316,7 +316,7 @@ iframe {
 
 /* section_articles =====================*/
 
-.section_articles {
+.section_side {
     .content {
         position: relative;
         background-color: $black;
@@ -328,7 +328,6 @@ iframe {
             background-color: $white;
         }
         .seeMore {
-            margin: 2em auto 3em;
             @media #{$lg} {
                 margin: 2em auto .4em;
             }
@@ -481,6 +480,10 @@ iframe {
             background-color: $black;
         }
     }
+}
+
+.seeMore.-onlyres {
+    margin: 3.5em auto 3em !important;
 }
 
 .col-onlylg-3 {
