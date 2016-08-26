@@ -4,7 +4,6 @@
         width: 60%;
     }
 }
-
 .col-md-5 {
     @media #{$lg} {
         width: 50%;
@@ -525,12 +524,18 @@ iframe {
             text-transform: uppercase;
             margin-right: 1.5em;
             letter-spacing: 4px;
+            word-wrap: break-word;
+            @media #{$sm} {
+                word-wrap: normal;
+            }
         }
     }
     .section-title {
+        position: relative;
         background-color: $white;
         border-top: 1px solid $gray;
         @media #{$lg} {
+            position: absolute;
             top: 6.5em;
             bottom: initial;
             left: 11em;

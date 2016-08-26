@@ -1,5 +1,30 @@
  // Footer //////////////////////////////////
- 
+ footer {
+     @extend .clearfix;
+     position: relative;
+     width: 100%;
+     height: auto;
+     display: block;
+     background: url("../images/footer_bg.jpg") no-repeat;
+     background-size: 100% 100%;
+     overflow: hidden;
+     margin: 0 auto;
+     padding: 0 6%;
+     text-align: center;
+     @media #{$sm} {
+         padding: 5%;
+         text-align: right;
+     }
+     @media #{$md} {
+         margin-top: -7em;
+         z-index: -1;
+     }
+     @media #{$lg} {
+         padding: 9% 0% 3%;
+     }
+     p {
+         color: $gray;
+     }
+ }
  
  // End Footer //////////////////////////////////
-
