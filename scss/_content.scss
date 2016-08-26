@@ -281,18 +281,32 @@ iframe {
     @extend .clearfix;
     display: block;
     width: 80%;
-    margin: .5em auto 5em;
+    margin: 2em auto 5em;
     text-align: right;
+    position: relative;
+    &:hover,
+    &:focus {
+        p.seemore-text {
+            text-decoration: underline;
+        }
+    }
     img {
         width: 50px;
         height: 50px;
         margin-right: 15px;
+        display: inline-block;
+        position: absolute;
+        top: -35px;
+        right: 0;
+        padding: 1px;
     }
-    p {
+    p.seemore-text {
         color: $black;
         margin-top: -13px;
         text-transform: uppercase;
         font-weight: 400;
+        display: inline-block;
+        white-space: nowrap;
     }
     @media #{$md} {
         width: 70%;
@@ -306,11 +320,18 @@ iframe {
     .content {
         position: relative;
         background-color: $black;
+        padding-bottom: 0%;
         @media #{$lg} {
             border-top: 1px solid $gray;
             width: 68%;
             display: inline-block;
             background-color: $white;
+        }
+        .seeMore {
+            margin: 2em auto 3em;
+            @media #{$lg} {
+                margin: 2em auto .4em;
+            }
         }
         .btm_corner {
             width: 10%;
