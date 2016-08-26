@@ -284,6 +284,9 @@ iframe {
     margin: 2em auto 5em;
     text-align: right;
     position: relative;
+    @media #{$md} {
+        width: 60%;
+    }
     &:hover,
     &:focus {
         p.seemore-text {
@@ -308,9 +311,6 @@ iframe {
         display: inline-block;
         white-space: nowrap;
     }
-    @media #{$md} {
-        width: 70%;
-    }
 }
 
 
@@ -323,11 +323,14 @@ iframe {
         padding-bottom: 0%;
         @media #{$lg} {
             border-top: 1px solid $gray;
-            width: 68%;
+            width: 71%;
             display: inline-block;
             background-color: $white;
         }
         .seeMore {
+            @media #{$md} {
+                width: 44%;
+            }
             @media #{$lg} {
                 margin: 2em auto .4em;
             }
@@ -339,7 +342,7 @@ iframe {
             left: -6%;
             z-index: 1;
             pointer-events: none;
-            max-width: 150px;
+            max-width: 110px;
         }
     }
     .content-desc {
@@ -383,6 +386,7 @@ iframe {
         flex-flow: column wrap;
         @media #{$lg} {
             flex-flow: row wrap;
+            width: 75%;
         }
     }
     .article-img {
@@ -470,9 +474,9 @@ iframe {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .col-onlylg-3 {
+    .leftside_title {
         @media #{$lg} {
-            width: 28%;
+            width: 25%;
             margin-right: 4%;
             float: left;
             display: inline-block;
@@ -491,6 +495,49 @@ iframe {
     position: relative;
     @media #{$lg} {
         width: 30%;
+    }
+}
+
+
+/* section_singleLong =====================*/
+
+.content-img {
+    width: 100%;
+    height: auto;
+    padding-top: 2.5em;
+}
+
+.section_singleLong {
+    margin-top: 6em;
+    @media #{$lg} {
+        margin-top: 9em;
+    }
+    .content-desc {
+        @media #{$sm} {
+            margin: 0 0 0 3em;
+        }
+        h2 span{
+            font-family: "kanit";
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-right:1.5em;
+            letter-spacing: 4px;
+        }
+    }
+    .section-title {
+        background-color: $white;
+        border-top: 1px solid $gray;
+        @media #{$lg} {
+            top: 8.5em;
+            bottom: initial;
+            left: 9em;
+        }
+        p {
+            color: $black;
+            @media #{$lg} {
+                text-align: left;
+            }
+        }
     }
 }
 
