@@ -55,3 +55,9 @@ a{
 .-block-center{
     margin: 0 auto !important;
 }
+.-onlylg{
+    display: none;
+    @media #{$lg}{
+        display: block;
+    }
+}
