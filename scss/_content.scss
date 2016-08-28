@@ -4,9 +4,60 @@
         width: 60%;
     }
 }
+
 .col-md-5 {
     @media #{$lg} {
         width: 50%;
+    }
+}
+
+
+/* pageHeader =====================*/
+
+.pageHeader {
+    font-size: 20px;
+    font-size: 2.0rem;
+    background-color: $black;
+    margin-bottom: 20px;
+    p {
+        font-size: 2em;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        letter-spacing: .2em;
+        color: $white;
+        margin: 0;
+        @media #{$md} {
+            line-height: 1.5em;
+        }
+        span {
+            line-height: 1.2em;
+            letter-spacing: .2em;
+            margin-right: 20px;
+        }
+    }
+    .pageHeader_block {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding: 3.3em 0 2em;
+        @media #{$md} {
+            width: 60%;
+        }
+        .pageHeader_text-l {
+            display: inline-block;
+            vertical-align: text-top;
+        }
+        .pageHeader_text-r {
+            @extend .pageHeader_text-l;
+            p {
+                @media #{$sm} {
+                    margin-top: 49px;
+                }
+                @media #{$md} {
+                    margin-top: 60px;
+                }
+            }
+        }
     }
 }
 
