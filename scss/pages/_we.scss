@@ -71,6 +71,9 @@
             height: auto;
             min-height: 25rem;
             display: inline;
+            @media #{$sm} {
+                width: 10rem;
+            }
             @media #{$md} {
                 min-height: 25rem;
             }
