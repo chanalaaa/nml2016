@@ -1,0 +1,59 @@
+.section_single.we {
+    background-color: $purper;
+    .content-desc {
+        padding: 0px 15px 15px;
+        h2 {
+            color: $white;
+            font-size: 13.3em;
+            line-height: .57em;
+            margin: 0;
+        }
+        p {
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 400;
+            padding-left: 2.3em;
+            padding-top: .6em;
+            line-height: 20px;
+        }
+        span {
+            font-weight: 400;
+        }
+        .we_leftBlock {
+            position: relative;
+            float: left;
+            width: 20%;
+            height: auto;
+            min-height: 32rem;
+            display: inline;
+            @media #{$lg} {
+                min-height: 26rem;
+                //width: 30rem;
+            }
+        }
+        .we_rightBlock {
+
+              @media #{$md} {
+                 display: inline-block;
+                //width: 30rem;
+            }
+            @media #{$lg} {
+            	 display: inline;
+                white-space: nowrap;
+                //width: 30rem;
+            }
+        }
+        .section-title {
+            bottom: 0%;
+            width: 25rem;
+            @media #{$lg} {
+                width: 27rem;
+                bottom: -22%;
+            }
+            p {
+                letter-spacing: 7px;
+            }
+        }
+    }
+}

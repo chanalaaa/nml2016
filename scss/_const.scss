@@ -44,26 +44,39 @@ p {
     font-weight: 300;
     line-height: 1em;
 }
-a{
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+a {
     color: $black;
     cursor: pointer;
 }
+
 .-text-purper {
     color: $purper !important;
 }
 
-.-block-center{
+.-text-black {
+    color: $black !important;
+}
+
+.-block-center {
     margin: 0 auto !important;
 }
-.-onlylg{
+
+.-onlylg {
     display: none !important;
-    @media #{$lg}{
+    @media #{$lg} {
         display: block !important;
     }
 }
-.-onlyres{
+
+.-onlyres {
     display: block !important;
-    @media #{$lg}{
+    @media #{$lg} {
         display: none !important;
     }
 }
