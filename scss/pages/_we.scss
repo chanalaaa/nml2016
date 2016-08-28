@@ -1,12 +1,56 @@
+.section_single.longRight {
+    .content-desc {
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 40px 15px;
+        @media #{$sm} {
+            padding: 40px 15px 15px 15px;
+            width: 80%;
+        }
+        @media #{$md} {
+            margin: 0 0 0 5.5em;
+        }
+        @media #{$lg} {
+            width: 100%;
+        }
+    }
+}
+
 .section_single.we {
     background-color: $purper;
+    overflow-x: hidden;
+    .content {
+        max-height: 25rem;
+    }
     .content-desc {
-        padding: 0px 15px 15px;
+        padding: 0 15px 15px 0;
+        @media #{$sm} {
+            white-space: nowrap;
+            padding: 0 15px 15px 15px;
+        }
+        /*
+        width: 100%;
+        padding: 0 0px 15px;
+        @media #{$sm} {
+            width: 80%;
+            padding: 0px 15px 15px;
+            white-space: nowrap;
+        }
+        @media #{$md} {
+            width: 75%;
+        }
+        @media #{$lg} {
+            width: 70%;
+        }
+        */
         h2 {
             color: $white;
-            font-size: 13.3em;
+            font-size: 12.3em;
             line-height: .57em;
             margin: 0;
+            @media #{$sm} {
+                font-size: 13.3em;
+            }
         }
         p {
             color: $white;
@@ -25,34 +69,40 @@
             float: left;
             width: 20%;
             height: auto;
-            min-height: 32rem;
+            min-height: 25rem;
             display: inline;
+            @media #{$md} {
+                min-height: 25rem;
+            }
             @media #{$lg} {
                 min-height: 26rem;
                 //width: 30rem;
             }
         }
         .we_rightBlock {
-
-              @media #{$md} {
-                 display: inline-block;
+            display: inline;
+            @media #{$sm} {
+                display: inline-block;
                 //width: 30rem;
             }
             @media #{$lg} {
-            	 display: inline;
+                display: inline-block;
                 white-space: nowrap;
                 //width: 30rem;
             }
         }
         .section-title {
-            bottom: 0%;
-            width: 25rem;
-            @media #{$lg} {
-                width: 27rem;
-                bottom: -22%;
-            }
+            transform: rotate(-90deg);
+            width: 27rem;
+            bottom: -24%;
+            transform-origin: top left;
+            top: inherit;
             p {
                 letter-spacing: 7px;
+                text-align: right;
+            }
+            @media #{$sm} {
+                bottom: -24%;
             }
         }
     }
