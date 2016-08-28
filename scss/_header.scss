@@ -32,6 +32,10 @@
          &:hover {
              color: $purper !important;
          }
+         &.active {
+             background-color: $white !important;
+             color: $black !important;
+         }
      }
      .navbar-title {
          a > img {
@@ -50,6 +54,5 @@
          }
      }
  }
- 
  
  // End Header //////////////////////////////////

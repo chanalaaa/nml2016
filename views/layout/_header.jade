@@ -7,11 +7,12 @@ header
 					button(role="button" onclick="openNavList()") =
 			ul.navList.collapse
 				li
-					a(href="#") WE
+					//- a(href="#" class=currentPage === "we" ? 'active' : '') WE
+					a(href="./we.html" class={active: currentPage === 'we'}) WE
 				li
-					a(href="#") WOrK
+					a(href="./work.html" class={active: currentPage === 'work'}) WOrK
 				li
-					a(href="#") ReAD
+					a(href="./read.html" class={active: currentPage === 'read'}) ReAD
 				li
-					a(href="#") ContAct
+					a(href="./contact.html" class={active: currentPage === 'contact'}) ContAct
 	
