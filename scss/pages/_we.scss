@@ -1,3 +1,5 @@
+/* section_single.longRight =====================*/
+
 .section_single.longRight {
     .content-desc {
         width: 100%;
@@ -15,6 +17,9 @@
         }
     }
 }
+
+
+/* section_single.we =====================*/
 
 .section_single.we {
     background-color: $purper;
@@ -107,6 +112,57 @@
             @media #{$sm} {
                 bottom: -24%;
             }
+        }
+    }
+}
+
+
+/* section_fourcolumn =====================*/
+
+.section_fourcolumn {}
+
+.fourcolumn_block {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-top: 3px solid $white;
+    .fourcolumn_item {
+        text-transform: uppercase;
+        background: url("http://placehold.it/800x450");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        padding: 15px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        color: white;
+        @media #{$sm} {
+            width: 50%
+        }
+        @media #{$md} {
+            width: 33.3333%;
+            height: 220px;
+        }
+        @media #{$lg} {
+            width: 25%;
+        }
+        .fourcolumn-text {
+            font-weight: 500;
+            font-size: 1.6em;
+            text-align: center;
+            
+        }
+        &:nth-child(1){
+        	background: url("https://unsplash.it/800/450?image=274");
+        }
+        &:nth-child(6){
+        	background: url("https://unsplash.it/800/450?image=40");
         }
     }
 }
