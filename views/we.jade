@@ -98,17 +98,30 @@ block body
 
 
 	// gangster
-	section.section_singleLong
+	section.section_singleLong.gangster
 		.row
-			.col-12.col-md-6.-block-center.section-block
+			.col-12.-block-center.section-block
+				.bg-gray
 				.section-title
 					p dude
+				.swiper-container.gangster
+					.swiper-wrapper
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+			.col-12.col-md-6.-block-center.section-block
 				.content
-					a(href="#")
-						.content-img.long
-							img(src="./images/godfather.jpg", alt="")
-							.purper_hover
-								.overlay
 					.content-desc
 						p.
 							Creativity Make Impossible To Possible Innovation <br>
@@ -133,10 +146,22 @@ block js
 		var swiper = new Swiper('.swiper-container.we', {
 		slidesPerView: 1.15,
 		paginationClickable: true,
-		nextButton: '.next',
-		prevButton: '.prev',
 		freeMode:true,
 		grabCursor: true,
+		breakpoints: {
+			600: {
+						slidesPerView: 1.16,},
+			490: {
+						slidesPerView: 1.22, }
+				}
+		});
+	script(type='text/javascript').
+		var swiper = new Swiper('.swiper-container.gangster', {
+		slidesPerView: 7.7,
+		paginationClickable: true,
+		freeMode:true,
+		grabCursor: true,
+		centeredSlides: true,
 		breakpoints: {
 			600: {
 						slidesPerView: 1.16,},
