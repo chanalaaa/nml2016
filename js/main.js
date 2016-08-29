@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-
-
     $(".owl-carousel.loop").owlCarousel({
         stagePadding: 40,
         center: true,
@@ -29,9 +26,8 @@ $(document).ready(function() {
     });
 
 
-
+/*
     var swiper = new Swiper('.swiper-container.we', {
-        pagination: '.swiper-pagination',
         //slidesPerView: 2.13,
         slidesPerView: 1.15,
         //centeredSlides: true,
@@ -52,6 +48,7 @@ $(document).ready(function() {
             }
         }
     });
+    */
 
 });
 

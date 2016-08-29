@@ -135,33 +135,24 @@ We</h2>
           </div>
         </div>
       </section>
-      <!-- section 4-->
-      <section class="section_triple first">
-        <div class="bg-purper"></div>
+      <!-- gangster-->
+      <section class="section_singleLong">
         <div class="row">
-          <div class="col-12 section-block">
-            <div class="col-12 col-md-5 -block-center section-block"></div>
-            <div class="swiper-container we">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="https://unsplash.it/1200/600?image=70" alt=""></div>
-                <div class="swiper-slide"><img src="https://unsplash.it/1200/600?image=96" alt=""></div>
-                <div class="swiper-slide"><img src="http://placehold.it/1200x600" alt=""></div>
-                <div class="swiper-slide"><img src="https://unsplash.it/1200/600?image=39" alt=""></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-5 -block-center">
-            <div class="content-tag">
-              <p>PRINT ADs</p>
-            </div>
-          </div>
           <div class="col-12 col-md-6 -block-center section-block">
+            <div class="section-title">
+              <p>dude</p>
+            </div>
             <div class="content">
+              <a href="#">
+                <div class="content-img long"><img src="./images/godfather.jpg" alt="">
+                  <div class="purper_hover">
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+              </a>
               <div class="content-desc">
-                <h2> 
-A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai market!</h2>
-                <p>Inspired by cinematic landscape of Mt.Rainier in United States, Mt.Raineir chilled cup coffee has been readily serving Japanese people at about one million cups daily for decade. </p>
-              </div>
+                <p>Creativity Make Impossible To Possible Innovation <br> Merlin Have a Magic Neumerlin Have a Creativity</p>
+                <h2> <span>Diversity.</span><span>Synergy.</span><span>Efficeincy.</span></h2></div>
             </div>
           </div>
         </div>
@@ -169,6 +160,28 @@ A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai marke
       <!--include ./layout/_footer-->
     </div>
     <script type="text/javascript" src="./js/vendors/swiper.min.js"></script>
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container.we',
+      {
+        slidesPerView: 1.15,
+        paginationClickable: true,
+        nextButton: '.next',
+        prevButton: '.prev',
+        freeMode: true,
+        grabCursor: true,
+        breakpoints:
+        {
+          600:
+          {
+            slidesPerView: 1.16,
+          },
+          490:
+          {
+            slidesPerView: 1.22,
+          }
+        }
+      });
+    </script>
     <script type="text/javascript" src="./js/vendors/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
