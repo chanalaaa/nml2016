@@ -165,3 +165,38 @@
         }
     }
 }
+
+.section_side.we_client {
+    margin-bottom: 8%;
+    .section-title {
+        @media #{$lg} {
+            top: 10px;
+            background-color: transparent;
+            border-top: none;
+            p {
+                color: $white;
+            }
+        }
+    }
+    .content {
+        background-color: $white;
+        padding: 0px 0;
+        @media #{$md} {
+            padding: 40px 0 0;
+        }
+        @media #{$lg} {
+            padding: 23px 0;
+            border-bottom: 1px solid $gray;
+        }
+    }
+    .leftside_title {
+        @media #{$lg} {
+            height: 30em;
+        }
+    }
+    .swiper-container .swiper-slide {
+        @media #{$lg} {
+            height: 37rem;
+        }
+    }
+}

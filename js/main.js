@@ -32,10 +32,11 @@ $(document).ready(function() {
 
     var swiper = new Swiper('.swiper-container.we', {
         pagination: '.swiper-pagination',
-        slidesPerView: 2.13,
+        //slidesPerView: 2.13,
+        slidesPerView: 1.15,
         //centeredSlides: true,
         paginationClickable: true,
-        spaceBetween: 10,
+        //spaceBetween: 10,
         nextButton: '.next',
         prevButton: '.prev',
         //loop: 1,
