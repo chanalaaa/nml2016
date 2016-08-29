@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+/*
 
     $(".owl-carousel.loop").owlCarousel({
         stagePadding: 40,
@@ -7,6 +8,8 @@ $(document).ready(function() {
         items: 1,
         loop: true,
         margin: 10,
+        video: 1,
+        smartSpeed:500,
         responsive: {
             600: {
                 items: 2
@@ -25,6 +28,28 @@ $(document).ready(function() {
         });
     });
 
+*/
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 2.13,
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 10,
+        nextButton: '.next',
+        prevButton: '.prev',
+        loop: 1,
+        loopAdditionalSlides:1,
+        grabCursor: true,
+         breakpoints: {
+            600: {
+                slidesPerView: 1.16,
+            },
+              490: {
+                slidesPerView: 1.22,
+            }
+        }
+    });
 
 });
 
