@@ -1,5 +1,6 @@
 extends ./layout/_base
-
+block css
+	link(rel="stylesheet" href="./css/swiper.min.css")
 block var
 	-var currentPage = "we"
 
@@ -82,10 +83,7 @@ block body
 		.row
 			.col-12.section-block
 				.col-12.col-md-5.-block-center.section-block
-					.customNavigation
-						i.prev.fa.fa-angle-left 
-						i.next.fa.fa-angle-right
-				.swiper-container
+				.swiper-container.we
 					.swiper-wrapper
 						.swiper-slide
 							img(src="https://unsplash.it/1200/600?image=70", alt="")
@@ -118,4 +116,4 @@ block body
 
 
 block js
-	//- script here
+	script(type="text/javascript", src="./js/vendors/swiper.min.js")
