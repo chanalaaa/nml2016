@@ -268,10 +268,13 @@
         }
     }
     .swiper-container {
-        margin: 5% auto 0;
+        margin:0 auto 0;
+        @media #{$lg} {
+            margin: 5% auto 0;
+        }
         .swiper-slide {
             width: 60%;
-            margin-left: -1px;
+            margin-left: -2px;
         }
     }
     .section-title {
