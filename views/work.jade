@@ -1,0 +1,49 @@
+extends ./layout/_base
+
+block var
+	-var currentPage = "work"
+
+block title
+	title WORK | neumerlin
+
+block body
+	include ./layout/_header   
+	//- content 
+	//pageHeader
+	.pageHeader
+		.pageHeader_block
+			.pageHeader_text-l
+				p.-text-purper
+					| work
+					span.-text-white
+						| s
+
+
+	// fourcolumn
+	section.section_fourcolumn
+		.row
+			.col-12.-block-center.section-block
+				.content
+					ul.fourcolumn_block
+						li.fourcolumn_item 
+							p.fourcolumn-text branding and product concept development
+						li.fourcolumn_item 
+							p.fourcolumn-text branding and product concept development
+						li.fourcolumn_item 
+							p.fourcolumn-text branding and product concept development
+						li.fourcolumn_item 
+							p.fourcolumn-text branding and product concept development
+						li.fourcolumn_item 
+							p.fourcolumn-text branding and product concept development
+						li.fourcolumn_item.-text-black
+							p.fourcolumn-text branding and product concept development
+						li.fourcolumn_item 
+							p.fourcolumn-text branding and product concept development
+						li.fourcolumn_item 
+							p.fourcolumn-text branding and product concept development
+
+
+
+	//- end content
+	//include ./layout/_footer
+
