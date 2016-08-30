@@ -100,14 +100,14 @@ block body
 	// gangster
 	section.section_singleLong.gangster
 		.row
-			.col-12.-block-center.section-block
+			.col-12.section-block.gangster-block
 				.bg-gray
 				.section-title
 					p dude
 				.swiper-container.gangster
 					.swiper-wrapper
 						.swiper-slide
-							img(src="http://placehold.it/600x800", alt="")
+							img(src="http://placehold.it/600x800?text=first", alt="")
 						.swiper-slide
 							img(src="http://placehold.it/600x800", alt="")
 						.swiper-slide
@@ -120,6 +120,14 @@ block body
 							img(src="http://placehold.it/600x800", alt="")
 						.swiper-slide
 							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800", alt="")
+						.swiper-slide
+							img(src="http://placehold.it/600x800?text=last", alt="")
 			.col-12.col-md-6.-block-center.section-block
 				.content
 					.content-desc
@@ -161,11 +169,15 @@ block js
 		paginationClickable: true,
 		freeMode:true,
 		grabCursor: true,
-		centeredSlides: true,
+		//centeredSlides: true,
+		loop: 1,
+		loopAdditionalSlides:3,
 		breakpoints: {
 			600: {
-						slidesPerView: 1.16,},
+						slidesPerView: 5.7,},
 			490: {
-						slidesPerView: 1.22, }
+						slidesPerView: 4.7, },
+			350: {
+						slidesPerView: 2.7, }
 				}
 		});

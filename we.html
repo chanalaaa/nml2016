@@ -138,13 +138,14 @@ We</h2>
       <!-- gangster-->
       <section class="section_singleLong gangster">
         <div class="row">
-          <div class="col-12 -block-center section-block">
+          <div class="col-12 section-block gangster-block">
             <div class="bg-gray"></div>
             <div class="section-title">
               <p>dude</p>
             </div>
             <div class="swiper-container gangster">
               <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="http://placehold.it/600x800?text=first" alt=""></div>
                 <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
                 <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
                 <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
@@ -152,6 +153,9 @@ We</h2>
                 <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
                 <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
                 <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
+                <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
+                <div class="swiper-slide"><img src="http://placehold.it/600x800" alt=""></div>
+                <div class="swiper-slide"><img src="http://placehold.it/600x800?text=last" alt=""></div>
               </div>
             </div>
           </div>
@@ -194,16 +198,22 @@ We</h2>
         paginationClickable: true,
         freeMode: true,
         grabCursor: true,
-        centeredSlides: true,
+        //centeredSlides: true,
+        loop: 1,
+        loopAdditionalSlides: 3,
         breakpoints:
         {
           600:
           {
-            slidesPerView: 1.16,
+            slidesPerView: 5.7,
           },
           490:
           {
-            slidesPerView: 1.22,
+            slidesPerView: 4.7,
+          },
+          350:
+          {
+            slidesPerView: 2.7,
           }
         }
       });
