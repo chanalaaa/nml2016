@@ -268,7 +268,7 @@
         }
     }
     .swiper-container {
-        margin:0 auto 0;
+        margin: 0 auto 0;
         @media #{$lg} {
             margin: 5% auto 0;
         }
@@ -278,6 +278,7 @@
         }
     }
     .section-title {
+        border: none;
         @media #{$lg} {
             left: 5.5%;
         }

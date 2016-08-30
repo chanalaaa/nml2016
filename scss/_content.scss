@@ -106,6 +106,12 @@ section {
     }
 }
 
+.section_single {
+    .section-title {
+        z-index: 0;
+    }
+}
+
 .section_single .video_container {
     margin-top: 35px;
     @media #{$lg} {
@@ -207,7 +213,6 @@ iframe {
         }
     }
 }
-
 
 .bg-purper {
     display: none;
@@ -621,7 +626,7 @@ iframe {
         height: inherit;
         background: rgba(88, 70, 225, .75);
     }
-    &:hover{
+    &:hover {
         opacity: 1;
     }
 }

@@ -1,0 +1,55 @@
+extends ./layout/_base
+
+block var
+	-var currentPage = "work"
+
+block title
+	title WORK | neumerlin
+
+block body
+	include ./layout/_header   
+	//- content 
+	//pageHeader
+	.pageHeader
+		.pageHeader_block
+			.pageHeader_text-l
+				p.-text-purper
+					| work
+					span.-text-white
+						| s
+
+
+	// section 1
+	section.section_triple
+		.row
+			.col-12.section-block
+				.col-12.col-md-5.-block-center.section-block
+					.customNavigation
+						i.prev.fa.fa-angle-left 
+						i.next.fa.fa-angle-right
+				.owl-carousel.loop
+					.item
+						img(src="https://unsplash.it/1280/800?image=70", alt="")
+					.item
+						img(src="https://unsplash.it/1280/800?image=96", alt="")
+					.item
+						img(src="http://placehold.it/1280x800", alt="")
+					.item
+						img(src="https://unsplash.it/1280/800?image=39", alt="")
+			.col-12.col-md-5.-block-center
+				.content-tag
+					p PRINT ADs
+			.col-12.col-md-6.-block-center.section-block
+				.content
+					.content-desc
+						h2 
+							| A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai market!
+						p.
+							Inspired by cinematic landscape of Mt.Rainier in United States, 
+							Mt.Raineir chilled cup coffee has been readily serving Japanese people 	
+							at about  one million cups daily for decade.
+
+
+	//- end content
+	include ./layout/_footer
+
