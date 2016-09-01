@@ -26,29 +26,34 @@ $(document).ready(function() {
     });
 
 
-/*
-    var swiper = new Swiper('.swiper-container.we', {
-        //slidesPerView: 2.13,
-        slidesPerView: 1.15,
-        //centeredSlides: true,
-        paginationClickable: true,
-        //spaceBetween: 10,
-        nextButton: '.next',
-        prevButton: '.prev',
-        //loop: 1,
-        //loopAdditionalSlides:1,
-        freeMode:true,
-        grabCursor: true,
-         breakpoints: {
-            600: {
-                slidesPerView: 1.16,
-            },
-              490: {
-                slidesPerView: 1.22,
+    /*
+        var swiper = new Swiper('.swiper-container.we', {
+            //slidesPerView: 2.13,
+            slidesPerView: 1.15,
+            //centeredSlides: true,
+            paginationClickable: true,
+            //spaceBetween: 10,
+            nextButton: '.next',
+            prevButton: '.prev',
+            //loop: 1,
+            //loopAdditionalSlides:1,
+            freeMode:true,
+            grabCursor: true,
+             breakpoints: {
+                600: {
+                    slidesPerView: 1.16,
+                },
+                  490: {
+                    slidesPerView: 1.22,
+                }
             }
-        }
-    });
-    */
+        });
+        */
+
+        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+        new ScrollMagic.Scene({triggerElement: "#parallax1"})
+                    .setTween(".bgTypo", {y: "50%", ease: Linear.easeNone})
+                    .addTo(controller);
 
 });
 
