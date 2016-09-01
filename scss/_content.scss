@@ -23,29 +23,48 @@
     height: 100%;
     z-index: 0;
     pointer-events: none;
+    @media #{$md} {
+        background-position: 100%;
+    }
     &.m {
         background-image: url(../images/bg_m.jpg);
         &.home {
             margin-top: -17%;
+            background-position: 72%;
+            @media #{$md} {
+                background-position: top;
+            }
         }
     }
     &.e {
         background-image: url(../images/bg_e.jpg);
         &.home {
-            margin-top: 18%;
+            margin-top: 23rem;
+            background-position: 30%;
+            @media #{$md} {
+                background-position: top;
+            }
         }
     }
     &.ui {
         background-image: url(../images/bg_ui.jpg);
         &.home {
             margin-top: -5%;
+            background-position: right;
+            @media #{$md} {
+                background-position: top;
+            }
         }
     }
     &.n {
         background-image: url(../images/bg_n.jpg);
         &.home {
-            margin-top: -6%;
-            margin-left: 5%;
+            margin-top: -8%;
+            margin-left: 3rem;
+            background-position: 3%;
+            @media #{$md} {
+                background-position: top;
+            }
         }
     }
 }
