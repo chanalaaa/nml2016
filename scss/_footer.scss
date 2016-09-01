@@ -17,7 +17,7 @@
      }
      @media #{$md} {
          margin-top: -5em;
-         z-index: -1;
+         z-index: 1;
      }
      @media #{$lg} {
          padding: 9% 0% 3%;

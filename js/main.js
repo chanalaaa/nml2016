@@ -62,8 +62,9 @@ $(document).ready(function() {
         new ScrollMagic.Scene({triggerElement: "#bgTypoUi"})
                     .setTween(".bgTypo.ui", {y: "45%", ease: Linear.easeNone})
                     .addTo(controller);
+
         new ScrollMagic.Scene({triggerElement: "#bgTypoN"})
-                    .setTween(".bgTypo.n", {y: "45%", ease: Linear.easeNone})
+                    .setTween(".bgTypo.n", {y: "35%", ease: Linear.easeNone})
                     .addTo(controller);
 
 
