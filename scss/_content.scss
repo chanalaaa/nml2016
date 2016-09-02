@@ -63,7 +63,12 @@
             margin-left: 3rem;
             background-position: 3%;
             @media #{$md} {
-                background-position: top;
+                margin-top: -13%;
+                background-position: 11%;
+            }
+            @media #{$lg} {
+                margin-top: -7%;
+                background-position: 20%;
             }
         }
     }
@@ -682,6 +687,8 @@ iframe {
         }
         p {
             color: $black;
+            margin: 0;
+            padding: 10px 15px 10px;
             @media #{$lg} {
                 text-align: left;
             }

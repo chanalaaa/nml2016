@@ -50,27 +50,29 @@ $(document).ready(function() {
         });
         */
 
-        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
-        new ScrollMagic.Scene({triggerElement: "#bgTypoM"})
-                    .setTween(".bgTypo.m", {y: "60%", ease: Linear.easeNone})
-                    .addTo(controller);
+    var controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
+    new ScrollMagic.Scene({ triggerElement: "#bgTypoM" })
+        .setTween(".bgTypo.m", { y: "60%", ease: Linear.easeNone })
+        .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: "#bgTypoE"})
-                    .setTween(".bgTypo.e", {y: "-30%", ease: Linear.easeNone})
-                    .addTo(controller);
+    new ScrollMagic.Scene({ triggerElement: "#bgTypoE" })
+        .setTween(".bgTypo.e", { y: "-30%", ease: Linear.easeNone })
+        .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: "#bgTypoUi"})
-                    .setTween(".bgTypo.ui", {y: "45%", ease: Linear.easeNone})
-                    .addTo(controller);
+    new ScrollMagic.Scene({ triggerElement: "#bgTypoUi" })
+        .setTween(".bgTypo.ui", { y: "45%", ease: Linear.easeNone })
+        .addTo(controller);
 
-        new ScrollMagic.Scene({triggerElement: "#bgTypoN"})
-                    .setTween(".bgTypo.n", {y: "35%", ease: Linear.easeNone})
-                    .addTo(controller);
+    new ScrollMagic.Scene({ triggerElement: "#bgTypoN" })
+        .setTween(".bgTypo.n", { y: "35%", ease: Linear.easeNone })
+        .addTo(controller);
 
 
 });
 
 function openNavList() {
+    var hamburger = document.querySelector('.hamburger')
+    hamburger.classList.toggle('active');
     var navList = document.querySelector('.navList')
-    navList.classList.toggle('collapse');
+    navList.classList.toggle('active');
 }

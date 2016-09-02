@@ -4,8 +4,11 @@ header
 			ul.navLogo
 				li.navbar-title
 					a(href="./"): img(src="images/nml_logo.png", alt="")
-					button(role="button" onclick="openNavList()") =
-			ul.navList.collapse
+					.hamburger(onclick="openNavList()")
+						span
+						span
+						span
+			ul.navList
 				li
 					//- a(href="#" class=currentPage === "we" ? 'active' : '') WE
 					a(href="./we.html" class={active: currentPage === 'we'}) WE
