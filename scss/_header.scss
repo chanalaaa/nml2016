@@ -41,9 +41,12 @@
          }
      }
      .navbar-title {
-         a > img {
+        .img_logo{
+            flex:0;
+        }
+         .img_logo > img {
              width: 35%;
-             min-width: 120px;
+             min-width: 135px;
          }
      }
      .navLogo {
