@@ -90,10 +90,10 @@ block body
 					.item
 						img(src="https://unsplash.it/1280/800?image=70", alt="")
 					.item
-						img(src="https://unsplash.it/1280/800?image=122", alt="")
-						//-
-							.video_container
-									iframe(class="vimeo" src="https://player.vimeo.com/video/64542720?color=7646FF&title=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen )
+						//-img(src="https://unsplash.it/1280/800?image=122", alt="")
+
+						.video_container
+								iframe(class="vimeo" src="https://player.vimeo.com/video/64542720?color=7646FF&title=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen )
 					.item
 						img(src="https://unsplash.it/1280/800?image=39", alt="")
 			.col-12.col-md-5.-block-center
@@ -282,7 +282,13 @@ block body
 				.content
 					a(href="./we.html")
 						.content-img.long
-							img(src="./images/godfather.jpg", alt="")
+							//-img(src="./images/godfather.jpg", alt="")
+							ul.weHomeList
+								li: img(src="./images/gangster/p1.jpg", alt="")
+								li: img(src="./images/gangster/p2.jpg", alt="")
+								li: img(src="./images/gangster/p3.jpg", alt="")
+								li: img(src="./images/gangster/p4.jpg", alt="")
+								li: img(src="./images/gangster/p5.jpg", alt="")
 							.purper_hover
 								.overlay
 					.content-desc
