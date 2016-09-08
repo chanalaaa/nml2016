@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /* set owl-carousel */
     $(".owl-carousel.loop").owlCarousel({
         stagePadding: 40,
         center: true,
@@ -27,6 +28,7 @@ $(document).ready(function() {
 
 
     /*
+        //set swipercarousel
         var swiper = new Swiper('.swiper-container.we', {
             //slidesPerView: 2.13,
             slidesPerView: 1.15,
@@ -50,6 +52,8 @@ $(document).ready(function() {
         });
         */
 
+
+    /* set bgTypo parallax */
     var controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
     new ScrollMagic.Scene({ triggerElement: "#bgTypoM" })
         .setTween(".bgTypo.m", { y: "60%", ease: Linear.easeNone })
@@ -68,8 +72,20 @@ $(document).ready(function() {
         .addTo(controller);
 
 
+
+    // /* set article-img Height */
+    // var article_imgHeight = $('.article-img img').height();
+    // $('.article-img').css("height", article_imgHeight);
+    // window.onresize = function(event) {
+    //     var article_imgHeight = $('.article-img img').height();
+    //     $('.article-img').css("height", article_imgHeight);
+    // };
+
+
+
 });
 
+/* Toggle Navbar */
 function openNavList() {
     var hamburger = document.querySelector('.hamburger')
     hamburger.classList.toggle('active');
