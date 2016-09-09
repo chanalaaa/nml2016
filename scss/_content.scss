@@ -67,8 +67,11 @@
                 background-position: 11%;
             }
             @media #{$lg} {
-                margin-top: -7%;
+                margin-top: -6%;
                 background-position: 20%;
+            }
+            @media screen and (min-width: 1500px) {
+                margin-top: -1em;
             }
         }
     }
@@ -675,6 +678,7 @@ iframe {
         white-space: nowrap;
         padding-top: 4em;
         background-color: $lightgray;
+        display: flex;
         li {
             display: inline-block;
             width: 19.5%;

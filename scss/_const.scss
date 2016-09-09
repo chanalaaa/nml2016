@@ -55,7 +55,9 @@ a {
     color: $black;
     cursor: pointer;
 }
-
+strong{
+    font-weight: 500 !important;
+}
 .-text-purper {
     color: $purper !important;
 }
