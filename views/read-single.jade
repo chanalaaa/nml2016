@@ -1,0 +1,53 @@
+extends ./layout/_base
+
+block var
+	-var currentPage = "read"
+
+block title
+	title WORK | neumerlin
+
+block body
+	include ./layout/_header   
+	//- content 
+	//pageHeader
+	.pageHeader
+		.pageHeader_block
+			.pageHeader_text-l
+				p.-text-purper
+					| read
+					span.-text-white
+						| s
+
+
+		// section 1
+	section.section_single
+		.row
+			.col-12.col-md-6.-block-center.section-block
+				.content
+					.content-desc.-fullwidth
+						.article--title 
+							p
+								| A Million Cup a day in Japan. 
+						.article--spec
+							p
+								| When: 
+								span 16 August 2016 | 19.00 – 20.30
+							p
+								| Where: 
+								span Auditorium, TCDC
+					.content-img
+						img(src="https://unsplash.it/1280/800?image=70", alt="")
+					.content-desc.-fullwidth
+						p.
+							Inspired by cinematic landscape of Mt.Rainier in United States, 
+							Mt.Raineir chilled cup coffee has been readily serving Japanese people 	
+							at about  one million cups daily for decade. <br> <br>
+
+							Nowadays, technical innovation becomes parity in almost every industry. To differentiate your new product initiative relies a lot more in adding the “commercial value” to your product. On the flip, “technical innovation” of new product rarely adds value and eventually becomes commodity. <br> <br>
+
+							At the early stage of new product development, we involve ourselves into developing commercial package to ensure new product innovation is well equipped and be ready to capitalize opportunity in a very fierce market competition.
+
+
+	//- end content
+	include ./layout/_footer
+
