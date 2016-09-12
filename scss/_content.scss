@@ -250,6 +250,12 @@ iframe {
     p {
         color: $gray;
         font-size: 1.1em;
+        line-height: 1.2em;
+    }
+    img{
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
     }
 }
 
@@ -633,6 +639,7 @@ iframe {
         font-size: 1.4em;
         font-weight: 300;
         color: $white;
+        line-height: 1em;
         @media #{$lg} {
             color: $black;
         }
