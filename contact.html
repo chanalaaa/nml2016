@@ -17,20 +17,30 @@
 
   <body ontouchstart="">
     <div id="wrapper">
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIEVHkAzM9czfPAbOJuq8Y6WSXz8JPksw&amp;callback=initMap" async defer></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr2-0AVfANx-ve-u5Xwe2RmNVlDtc0z5w&amp;callback=initMap" async defer></script>
       <script type="text/javascript">
         var map;
 
         function initMap()
         {
+          var myLatLng = {
+            lat: 13.792931,
+            lng: 100.544466
+          };
           map = new google.maps.Map(document.getElementById('map'),
           {
             center:
             {
-              lat: -34.397,
-              lng: 150.644
+              lat: 13.792931,
+              lng: 100.544466
             },
-            zoom: 8
+            zoom: 17
+          });
+          var marker = new google.maps.Marker(
+          {
+            position: myLatLng,
+            map: map,
+            title: '33 SPACE PRADIPAT'
           });
         }
       </script>
@@ -76,7 +86,7 @@
             </div>
           </div>
         </div>
-      </section><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCr2-0AVfANx-ve-u5Xwe2RmNVlDtc0z5w&amp;q=Space+Needle,Seattle+WA" allowfullscreen=""></iframe>
+      </section>
       <section class="section_single -full_width">
         <div class="row">
           <div class="col-12 -block-center section-block">

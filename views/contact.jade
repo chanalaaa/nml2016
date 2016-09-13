@@ -2,14 +2,20 @@ extends ./layout/_base
 
 block var
 	-var currentPage = "contact"
-	script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIEVHkAzM9czfPAbOJuq8Y6WSXz8JPksw&callback=initMap" async defer)
+	script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr2-0AVfANx-ve-u5Xwe2RmNVlDtc0z5w&callback=initMap" async defer)
 
 	script(type='text/javascript').
 		var map;
 			function initMap() {
+			var myLatLng = {lat: 13.792931, lng: 100.544466};
 				map = new google.maps.Map(document.getElementById('map'), {
-				center: {lat: -34.397, lng: 150.644},
-				zoom: 8
+				center: {lat: 13.792931, lng: 100.544466},
+				zoom: 17
+			});
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				title: '33 SPACE PRADIPAT'
 			});
 		}
 
@@ -56,7 +62,6 @@ block body
 								label(for='query') Query
 								textarea#query(type='text')
 							input.submit_btn(type='submit')
-	iframe(width='600', height='450', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCr2-0AVfANx-ve-u5Xwe2RmNVlDtc0z5w\&q=Space+Needle,Seattle+WA',allowfullscreen='')
 
 	section.section_single.-full_width
 		.row
