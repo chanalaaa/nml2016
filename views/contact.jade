@@ -2,7 +2,11 @@ extends ./layout/_base
 
 block var
 	-var currentPage = "contact"
-	script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr2-0AVfANx-ve-u5Xwe2RmNVlDtc0z5w&callback=initMap" async defer)
+	//-localhost
+	//-script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr2-0AVfANx-ve-u5Xwe2RmNVlDtc0z5w&callback=initMap" async defer)
+
+	//-nml
+	script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIEVHkAzM9czfPAbOJuq8Y6WSXz8JPksw&callback=initMap" async defer)
 
 	script(type='text/javascript').
 		var map;
