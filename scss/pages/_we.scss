@@ -133,8 +133,8 @@
         text-transform: uppercase;
         background: url("http://placehold.it/800x450");
         background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-position: center center !important;
+        background-size: cover;
+        background-position: center center;
         padding: 15px;
         box-sizing: border-box;
         width: 100%;
@@ -153,15 +153,78 @@
             width: 25%;
         }
         .fourcolumn-text {
-            font-weight: 500;
-            font-size: 1.6em;
             text-align: center;
+            font-weight: 500;
+            font-size: 1.5em;
+            line-height: 1.1em;
+            letter-spacing: .1em;
+            word-break: break-word;
         }
         &:nth-child(1) {
-            background: url("https://unsplash.it/800/450?image=274");
+            background: url("../images/we_mood/01.jpg");
+            background-position: 100%;
+            background-size: 145%;
+            justify-content: flex-end;
+            .fourcolumn-text {
+                width: 65%;
+                text-align: left;
+            }
+        }
+        &:nth-child(2) {
+            background: url("../images/we_mood/02.jpg");
+            background-position: 96% 70%;
+            background-size: 145%;
+        }
+        &:nth-child(3) {
+            background: url("../images/we_mood/03.jpg");
+            background-position: 60% 10%;
+            background-size: 140%;
+            .fourcolumn-text {
+                color: #984205;
+            }
+        }
+        &:nth-child(4) {
+            background: url("../images/we_mood/04.jpg");
+            background-position: 100%;
+            background-size: 145%;
+            justify-content: flex-end;
+            .fourcolumn-text {
+                margin-right: 20px;
+                color: $black;
+                width: 75%;
+                text-align: right;
+            }
+        }
+        &:nth-child(5) {
+            background: url("../images/we_mood/05.jpg");
+            background-position: 50%;
+            background-size: 170%;
+            .fourcolumn-text {
+                color: #6A5406;
+            }
         }
         &:nth-child(6) {
-            background: url("https://unsplash.it/800/450?image=40");
+            background: url("../images/we_mood/06.jpg");
+            background-position: 100% 0;
+            background-size: 145%;
+            justify-content: center;
+        }
+        &:nth-child(7) {
+            background: url("../images/we_mood/07.jpg");
+            background-position: 100% 100%;
+            background-size: 145%;
+            justify-content: center;
+        }
+        &:nth-child(8) {
+            background: url("../images/we_mood/08.jpg");
+            background-position: 20% 25%;
+            background-size: 145%;
+              justify-content: flex-end;
+             .fourcolumn-text {
+                width: 60%;
+                text-align: left;
+                color: #737373;
+            }
         }
     }
 }
