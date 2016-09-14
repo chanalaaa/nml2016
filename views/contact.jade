@@ -194,7 +194,7 @@ block body
 	include ./layout/_header   
 	//- content 
 	//pageHeader
-	.pageHeader
+	.pageHeader.contact
 		.pageHeader_block
 			.pageHeader_text-l
 				p.-text-purper
@@ -211,24 +211,24 @@ block body
 					.content-desc
 						form.form
 							.form_group
-								label(for='name') Name
-								input#name(type='text')
+								//-label(for='name') Name
+								input#name(type='text' placeholder="Name")
 							//-
 								.form_group
 									label(for='lname') Last name
 									input#lname(type='text')
 							.form_group
-								label(for='cop') Company
-								input#cop(type='text')
+								//-label(for='cop') Company
+								input#cop(type='text' placeholder="Company")
 							.form_group
-								label(for='mail') E-mail
-								input#mail(type='email')
+								//-label(for='mail') Email
+								input#mail(type='email' placeholder="Email")
 							.form_group
-								label(for='tel') Tel
-								input#tel(type='tel')
+								//-label(for='tel') Tel
+								input#tel(type='tel' placeholder="Tel")
 							.form_group
-								label(for='query') Query
-								textarea#query(type='text')
+								//-label(for='query') Query
+								textarea#query(type='text' placeholder="Query")
 							input.submit_btn(type='submit')
 
 	section.section_single.-full_width
