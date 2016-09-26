@@ -81,6 +81,18 @@ $(document).ready(function() {
     //     $('.article-img').css("height", article_imgHeight);
     // };
 
+    /* set work-img Height */
+    var work_imgHeight = $('.threecolumn_item_forheight img').height();
+    $('.threecolumn_item').css("height", "260px");
+    setTimeout(function() {
+        if (work_imgHeight !== 0) {
+            $('.threecolumn_item').css("height", work_imgHeight);
+        }
+    }, 1000);
+    window.onresize = function(event) {
+        var work_imgHeight = $('.threecolumn_item_forheight img').height();
+        $('.threecolumn_item').css("height", work_imgHeight);
+    };
 
 
 });
