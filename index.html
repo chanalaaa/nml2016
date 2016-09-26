@@ -55,7 +55,12 @@
               <p>what you can expect</p>
             </div>
             <div class="content">
-              <div class="video_container"><iframe src="https://player.vimeo.com/video/64542720?color=7646FF&amp;title=0&amp;byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="vimeo"></iframe></div>
+              <div class="video_container">
+                <div class="overlay"><iframe id="video" src="https://player.vimeo.com/video/64542720?color=7646FF&amp;title=0&amp;byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="vimeo"></iframe>
+                  <div id="play-button"
+                    class="playpause"></div>
+                </div>
+              </div>
               <div class="content-tag">
                 <p>VDO Series</p>
               </div>
@@ -139,7 +144,12 @@ A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai marke
         <div class="row">
           <div class="col-12 col-md-6 -block-center section-block">
             <div class="content">
-              <div class="video_container"><iframe src="https://player.vimeo.com/video/179940346?color=7646FF&amp;title=0&amp;byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="vimeo"></iframe></div>
+              <div class="video_container">
+                <div class="overlay"><iframe id="video2" src="https://player.vimeo.com/video/179940346?color=7646FF&amp;title=0&amp;byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="vimeo"></iframe>
+                  <div id="play-button2"
+                    class="playpause"></div>
+                </div>
+              </div>
               <div class="content-tag">
                 <p>VDO Series</p>
               </div>
@@ -324,6 +334,7 @@ A Million Cup a day in Japan. First chilled cup fresh coffee that hit Thai marke
       </footer>
     </div>
     <script type="text/javascript" src="./js/vendors/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>

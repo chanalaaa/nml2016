@@ -71,7 +71,7 @@ $(document).ready(function() {
         .setTween(".bgTypo.n", { y: "35%", ease: Linear.easeNone })
         .addTo(controller);
 
-   /* set work-img Height */
+    /* set work-img Height */
     var windowsWidth = ($(window).width());
     setworkImgHeight(windowsWidth);
     window.onresize = function(event) {
@@ -87,11 +87,33 @@ $(document).ready(function() {
             itemOnwindows = 1;
         }
         var work_imgHeight = (((windowsWidth / itemOnwindows) - 15) + 4) / 1.6;
-        console.log(itemOnwindows);
         $('.threecolumn_item').css("height", work_imgHeight);
     }
 
+
+
+    /*custom vimeo*/
+
+    var iframe = document.getElementById('video');
+    var iframe2 = document.getElementById('video2');
+    var player = $f(iframe);
+    var player2 = $f(iframe2);
+    var playButton = document.getElementById("play-button");
+    var playButton2 = document.getElementById("play-button2");
+    playButton.addEventListener("click", function() {
+        player.api("play");
+        $(this).parents(".video_container").addClass('played');
+    });
+    playButton2.addEventListener("click", function() {
+        player2.api("play");
+        $(this).parents(".video_container").addClass('played');
+    });
+
+
+
+
 });
+
 
 /* Toggle Navbar */
 function openNavList() {
