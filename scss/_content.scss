@@ -223,9 +223,10 @@ iframe {
 }
 
 .content-tag {
+    position: relative;
     float: right;
     color: $gray;
-    padding: 5px;
+    padding-right: 5px;
     z-index: 9;
 }
 
@@ -366,13 +367,9 @@ iframe {
         }
     }
     .content-tag {
-        padding: 0px 15px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background: $black;
+        padding-right: 48px;
         @media #{$sm} {
-            padding: 0px 26px;
+           padding-right: 26px;
         }
     }
     .content-desc {
@@ -382,7 +379,7 @@ iframe {
         //padding-top: 4.25%;
     }
     .content {
-        padding-top: 1.5%;
+        //padding-top: 1.5%;
     }
 }
 
