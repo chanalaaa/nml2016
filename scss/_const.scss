@@ -55,21 +55,40 @@ a {
     color: $black;
     cursor: pointer;
 }
-strong{
+
+strong {
     font-weight: 500 !important;
 }
+
+.fullbg {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden!important;
+    display: block;
+}
+
 .-text-purper {
     color: $purper !important;
 }
+
 .-text-white {
     color: $white !important;
 }
+
 .-text-black {
     color: $black !important;
 }
+
 .-bg-black {
     background: $black !important;
 }
+
 .-block-center {
     margin: 0 auto !important;
 }
@@ -87,6 +106,7 @@ strong{
         display: none !important;
     }
 }
-.-fullwidth{
+
+.-fullwidth {
     width: 100% !important;
 }
