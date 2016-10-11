@@ -357,6 +357,9 @@ iframe {
                 color: $white;
             }
         }
+        .article--readmore:after{
+            color: #fff;
+        }
     }
     .col-md-5 {
         width: 100%;
@@ -673,30 +676,40 @@ iframe {
         }
     }
     .article--readmore {
-        &:hover {
-            text-decoration: none;
-        }
         p {
-            display: inline-block;
             color: #fff;
-            &:hover {
-                text-decoration: underline;
-            }
             @media #{$lg} {
                 color: #000;
             }
         }
         &:after {
-            display: inline-block;
-            font-family: FontAwesome;
-            content: "\f105";
-            padding: 0 15px;
-            line-height: 0;
             color: #fff;
             @media #{$lg} {
                 color: #000;
             }
         }
+    }
+}
+
+.article--readmore {
+    &:hover {
+        text-decoration: none;
+    }
+    p {
+        display: inline-block;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &:after {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "\f105";
+        padding: 0 15px;
+        line-height: 0;
+        color: #000;
+        vertical-align: middle;
     }
 }
 
@@ -725,7 +738,7 @@ iframe {
     ul.weHomeList {
         white-space: nowrap;
         padding-top: 4em;
-        background-color: $lightgray;
+        background-color: #fff;
         display: flex;
         li {
             display: inline-block;
@@ -861,7 +874,6 @@ iframe {
     }
 }
 
-
 .playpause {
     background: url(../images/owl.video.play.png) no-repeat!important;
     width: 80px;
@@ -881,10 +893,8 @@ iframe {
     transition: 0.3s;
 }
 
-
 .playpause:hover {
     opacity: .8;
 }
-
 
 // End Content //////////////////////////////////

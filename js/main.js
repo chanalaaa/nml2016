@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    /* set owl-carousel */
+        /* set owl-carousel */
     $(".owl-carousel.loop").owlCarousel({
         stagePadding: 40,
         center: true,
