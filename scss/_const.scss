@@ -83,6 +83,9 @@ strong {
 
 .-text-black {
     color: $black !important;
+    p{
+        color: $black !important;
+    }
 }
 
 .-bg-black {
