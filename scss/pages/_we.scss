@@ -324,10 +324,10 @@
     .gangster-block {
         margin-left: 0;
         @media #{$sm} {
-            margin-left: 6.5rem;
+            //margin-left: 6.5rem;
         }
         @media #{$lg} {
-            margin-left: calc(16.66667% + 7.5px);
+            //margin-left: calc(16.66667% + 7.5px);
         }
         .swiper-slide {}
     }
@@ -383,8 +383,12 @@
     }
     .section-title {
         border: none;
+
+           @media #{$sm} {
+            
+        }
         @media #{$lg} {
-            left: 5.5%;
+           left: 30%;
         }
     }
 }
